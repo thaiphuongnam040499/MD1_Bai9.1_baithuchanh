@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<p>Nhập vào nhiệt độ (F): </p>
+<input type="text" id="temperature">
+<button type="button" onclick="temperatureConverter()">Đổi</button>
+<p id="result"></p>
+<script>
+function temperatureConverter(){
+    let F= +document.getElementById('temperature').value
+    let C = (F-32)/1.8
+    document.getElementById('result').innerHTML = 'Nhiệt độ (C) là ' +C
+}
+</script>
+</body>
+</html>
